@@ -1,0 +1,40 @@
+{
+    "name": "boring-dragon/tg-backup",
+    "description": "Command-line tool that can easily backup any files to telegram channels",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mohamed Jinas",
+            "email": "j@live.mv"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel-zero/framework": "^8.4",
+        "symfony/finder": "^5.2",
+        "telegram-bot/api": "^2.3"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.2",
+        "pestphp/pest": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "bin": ["tg-backup"]
+}
