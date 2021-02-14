@@ -12,7 +12,7 @@ class BackupASingleFileCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'backup:single {path_to_file : Path to the file you want to backup}';
+    protected $signature = 'backup:file {path_to_file : Path to the file you want to backup}';
 
     /**
      * The description of the command.
