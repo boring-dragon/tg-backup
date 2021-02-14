@@ -2,7 +2,6 @@
 
 namespace App\Commands;
 
-use Illuminate\Console\Scheduling\Schedule;
 use LaravelZero\Framework\Commands\Command;
 use TelegramBot\Api\BotApi;
 
@@ -37,16 +36,5 @@ class TestTelegramConnectionCommand extends Command
         $bot->sendMessage(env('TELEGRAM_CHANNEL_ID'), "This is a test message from tg-backup app");
 
         $this->info("Testing.. Check your telegram channel.");
-    }
-
-    /**
-     * Define the command's schedule.
-     *
-     * @param  \Illuminate\Console\Scheduling\Schedule $schedule
-     * @return void
-     */
-    public function schedule(Schedule $schedule)
-    {
-        // $schedule->command(static::class)->everyMinute();
     }
 }
